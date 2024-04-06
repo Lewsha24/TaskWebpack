@@ -1,2 +1,14 @@
-body{margin:1rem auto;max-width:960px}
-/*# sourceMappingURL=main.css.map*/
+/*!*******************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./index.scss ***!
+  \*******************************************************************************************************/
+@font-face {
+  font-family: "Roboto";
+  src: url(cf56c1b149d0a5e8d7c6.ttf);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 960px;
+  margin: 1rem auto;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJtYXBwaW5ncyI6Ijs7O0FBQUE7RUFDSTtFQUNBO0FBQ0o7QUFHQTtFQUNJO0VBQ0E7RUFDQTtBQURKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9pbmRleC5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nO1xyXG4gICAgc3JjOiB1cmwoJy4vZm9udHMvUm9ib3RvLUJsYWNrLnR0ZicpO1xyXG59XHJcblxyXG5cclxuYm9keSB7XHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbiAgICBtYXgtd2lkdGg6OTYwcHg7XHJcbiAgICBtYXJnaW46IDFyZW0gYXV0bztcclxufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

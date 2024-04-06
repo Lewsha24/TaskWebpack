@@ -5,6 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 //Этот плагин извлекает CSS в отдельные файлы. Он создает файл CSS для каждого файла JS, который содержит CSS. Он поддерживает загрузку CSS и SourceMaps по требованию.
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 const path = require('path')
 
 const dist = 'dist'
@@ -41,6 +42,9 @@ module.exports = {
         //Чтение с права на лево!
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+        {test: /\.s[ac]ss$/i,
+            use:[ MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',

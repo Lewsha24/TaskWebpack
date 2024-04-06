@@ -4,8 +4,11 @@ import "./index.scss";
 
 const root = document.querySelector('#app')
 
-function renderItem(item) {
+function renderItem(item, index) {
   const li = document.createElement('li')
+  if (index % 2 === 0) {
+    li.style.color = 'red'
+  }
   li.textContent = item.title
   root.append(li)
 }

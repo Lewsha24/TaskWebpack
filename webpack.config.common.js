@@ -36,19 +36,31 @@ module.exports = {
     ],
       // Подключаем модуль style-loader and css loader
     module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        //Чтение с права на лево!
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-        {test: /\.s[ac]ss$/i,
-            use:[ MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-        },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      },
-    ],
-  },
+        rules: [
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [require('postcss-preset-env')],
+                            },
+                        },
+                    },
+                    'sass-loader',
+                ],
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
+        ],
+    },
 }

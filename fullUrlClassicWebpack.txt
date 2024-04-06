@@ -16,6 +16,18 @@ https://webpack.js.org/plugins/mini-css-extract-plugin/
 
 npm install --save-dev mini-css-extract-plugin
 
+
 https://webpack.js.org/guides/asset-management/#loading-fonts
 
-тут мы можем научить работать со шрифтами )
+тут мы можем научить работать со шрифтами
+
+PostCSS
+Позволяет писать новый код на css
+При этом новые фишки будут работать и на старых браузерах )
+
+https://webpack.js.org/loaders/postcss-loader/#root
+
+webpack-dev-server API
+Запускает постоянный билд вебпака, не нужно сто раз использовать одну команду
+Есть еще network ipv4
+https://webpack.js.org/api/webpack-dev-server/#root

@@ -5,4 +5,9 @@ module.exports = merge(commonConfig, {
     mode:"development",
     // Эта опция определяет, будут ли и каким образом генерироваться исходные карты.
     devtool: "inline-source-map",
+    devServer: {
+        port: 3000,
+        hot: true,
+        open: true,
+    }
 })

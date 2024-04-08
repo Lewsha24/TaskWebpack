@@ -13,11 +13,14 @@ const dist = 'dist'
 module.exports = {
     mode: 'development',// пришлось ставить это, иначе бы не заработало! Илья посомтри что это значит
     context: path.resolve(__dirname, 'src'),
-    entry: './index.js',
+    entry: './index.tsx',
     output: {
         path: path.resolve(__dirname, dist),
         filename: '[name].[contenthash].js',
         clean: true,// очещаем папку дист, для работы с актуальным файлом 
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js', 'jsx'],
     },
     // Подключаем плагин
     plugins: 
@@ -60,6 +63,11 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.[tj]sx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             },
         ],
     },

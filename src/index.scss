@@ -6,6 +6,28 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    max-width:960px;
-    margin: 1rem auto;
+    //max-width:960px;
+    //margin: 1rem auto;
+
+    header {
+        span {
+            display: flex;
+            font-size: 50px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    }
+    #app {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .block {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            margin: 20% 10px;
+
+
+        }
+    }
 }

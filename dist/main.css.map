@@ -1,1 +1,0 @@
-{"version":3,"file":"main.css","mappings":"AAAA,WACI,mBACA,oEAKA,CACA,gBACA,CAFA,eAEA","sources":["webpack:///./index.scss"],"sourcesContent":["@font-face {\r\n    font-family: 'Roboto';\r\n    src: url('./fonts/Roboto-Black.ttf');\r\n}\r\n\r\n\r\nbody {\r\n    font-family: 'Roboto', sans-serif;\r\n    max-width:960px;\r\n    margin: 1rem auto;\r\n}"],"names":[],"sourceRoot":""}

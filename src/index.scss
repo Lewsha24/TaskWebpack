@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Roboto';
     src: url('./fonts/Roboto-Black.ttf');
@@ -6,9 +7,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url("assets/rainy-bg.jpg");
+    object-fit:cover;
     //max-width:960px;
     //margin: 1rem auto;
-
     header {
         span {
             display: flex;
@@ -20,14 +22,78 @@ body {
     #app {
         display: flex;
         justify-content: center;
-        width: 100%;
+        max-width: 100%;
         .block {
+            display: block;
+            margin: 10% 10px;
+
+            svg.icon {
+                display: inline-flex;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: relative;
+                width: 35%;
+                height: 31%;
+                top: 56%;
+                margin-left: 28%;
+            }
+
+            img {
+                display: block;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border: solid 5px;
+                border-radius: 10%;
+
+            }
+
+            .name_sound {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                color: white;
+            }
+        }
+
+        .range_box {
+
+            position: absolute;
+            top: 70%;
             display: flex;
-            width: 200px;
-            height: 200px;
-            margin: 20% 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 7px;
+            background-color: #c9c9c9;
+            border-radius: 40px;
 
+            input.range {
+                width: 400px;
+                overflow: hidden;
+            }
 
+            span.range_value {
+                position: relative;
+                text-align: center;
+                width: 60px;
+                font-size: 1.25em;
+                color: #fff;
+                background: #022f52;
+                margin-left: 15px;
+                border-radius: 25px;
+                font-weight: 500;
+            }
+
+            svg.pause_sound {
+                display: block;
+                background-repeat: no-repeat;
+                background-size: 20%;
+                position: absolute;
+                width: 60%;
+                height: 136%;
+                margin-left: 47%;
+                margin-bottom: 23%;
+            }
         }
     }
 }

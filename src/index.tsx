@@ -9,7 +9,6 @@ interface Item {
     name: string
     icon: string
     music: string
-
 }
 
 let audio: any
